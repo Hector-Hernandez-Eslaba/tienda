@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template:
+    "nav" 50px
+    "content" 900px
+    "footer" 100px/400px;
+
+    background: rgb(186,176,212);
+    background: linear-gradient(180deg, rgba(186,176,212,1) 0%, rgba(76,26,87,1) 67%);
+}

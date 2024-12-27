@@ -58,8 +58,19 @@ function totalDinero(){
     }
 
     let totalVenta = sumar(cantidadTienda);
+    let mayorVenta = mejorTienda(cantidadTienda);
+    let menorVenta = mejorar(cantidadTienda);
+    alert(totalVenta, mayorVenta, menorVenta);
 
-    alert(totalVenta);
+    const corteDeCaja = document.querySelector(".text1");
+    corteDeCaja.textContent = totalVenta;
+
+    const mejorVenta = document.querySelector(".text2");
+    mejorVenta.textContent =  mayorVenta;
+
+    const badTienda = document.querySelector(".text3");
+    badTienda.textContent = menorVenta;
+
 }
 
 function sumar(array){
@@ -69,4 +80,28 @@ function sumar(array){
         resultadoSuma = resultadoSuma + venta;
     }
     return resultadoSuma;
+}
+
+function mejorTienda(array){
+    let maximo = array[0];
+
+    for(let mayor of array){
+        if(mayor > maximo){
+            maximo = mayor;
+        }
+    }
+
+    return maximo;
+}
+
+function mejorar(array){
+    let minimo = array[0];
+
+    for(let menor of array){
+        if(menor < minimo){
+            minimo = menor;
+        }
+    }
+
+    return minimo;
 }
