@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+</head>
+<body>
+   <nav>
+    <img src="" alt="Logo">
+    <img src="" alt="email">
+    <img src="" alt="Phone">
+   </nav> 
+   <main>
+    <form action="">
+        <div class="boxInput">
+            <input id="numero" type="number">
+            <label for="numero">ID Tienda</label>
+        </div>
+        <div class="boxInput">
+            <input id="nombre" type="text">
+            <label for="nombre">Nombre de la Tienda</label>
+        </div>
+    </form>
+    <div class="formButton">
+        <button onclick="crearTienda()">crear tienda</button>
+        <button onclick="reset()">Limpiar</button>
+    </div>
+    <section>
+        <div class="boxTienda">      
+        
+        </div>
+        <button onclick="totalDinero()">Sumar cantidades</button>
+        <div class="boxResultado">
+            <h3 class="textResultado">Cantidad total de dinero recaudado</h3>
+            <h3 class="textMayoVenta">Tienda con mayor venta</h3>
+            <h3 class="menoVenta">Tienda con menor venta</h3>
+        </div>
+    </section>
+   </main>
+</body>
+<script src="index.js"></script>
+</html>
