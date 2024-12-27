@@ -7,9 +7,158 @@ body{
     display: grid;
     grid-template:
     "nav" 50px
-    "content" 900px
+    "content" 700px
     "footer" 100px/400px;
 
-    background: rgb(186,176,212);
-    background: linear-gradient(180deg, rgba(186,176,212,1) 0%, rgba(76,26,87,1) 67%);
+    background-color: #9c8e89;   
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+main{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.boxInput{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+h1{
+    font-family: "Alegreya", serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 90%;
+    border-radius: 5px;
+    height: 150px;
+    gap: 10px;
+}
+
+form label{
+    position: absolute;
+    font-family: "Alegreya", serif;
+    font-weight: 600;
+    background-color: #ffff;
+    border-radius: 5px;
+    padding: 0 5px 0 5px;
+    transition: 500ms;
+}
+
+form input{
+    padding: 10px;
+    border-radius: 5px;
+    border: solid #0000 1px;
+}
+
+form input:is(:focus, :valid){
+    outline-color: red;
+}
+
+
+form input:focus ~ label, input:valid ~ label{
+    transform: translateY(-10px);
+    color: #000;
+}
+
+.formButton{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    gap: 10px;
+}
+
+.formButton button{
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: "Yanone Kaffeesatz", serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+}
+
+.boxTienda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    height: 250px;
+    border-radius: 5px;
+    overflow-y: scroll;
+    background-color: bisque;
+}
+
+.tiendaBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    background-color: rgb(161, 244, 244);
+}
+
+.tiendaBox input {
+    align-self: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+}
+
+.tiendaBox label{
+    font-family: "Alegreya", serif;
+    font-weight: 600;
+}
+
+.tiendaBox p {
+    font-family: "Alegreya", serif;
+    font-weight: 600;
+}
+
+.btnTotal{
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    font-family: "Yanone Kaffeesatz", serif;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+h3{
+    font-family: "Istok Web", serif;
+    font-weight: 700;
 }

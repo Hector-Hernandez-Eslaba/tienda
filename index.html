@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Tienda</title>
 </head>
+
 <body>
-   <nav>
-    <img src="" alt="Logo">
-    <img src="" alt="email">
-    <img src="" alt="Phone">
-   </nav> 
-   <main>
-    <form action="">
-        <div class="boxInput">
-            <input id="numero" type="number">
-            <label for="numero">ID Tienda</label>
+    <nav>
+        <img src="" alt="Logo">
+        <img src="" alt="email">
+        <img src="" alt="Phone">
+    </nav>
+    <main>
+        <h1>Ingrese los datos de la tienda</h1>
+        <form action="">
+            <div class="boxInput">
+                <input id="numero" type="number">
+                <label for="numero">ID Tienda</label>
+            </div>
+            <div class="boxInput">
+                <input id="nombre" type="text">
+                <label for="nombre">Nombre de la Tienda</label>
+            </div>
+        </form>
+        <div class="formButton">
+            <button onclick="crearTienda()">crear tienda</button>
+            <button onclick="reset()">Limpiar</button>
         </div>
-        <div class="boxInput">
-            <input id="nombre" type="text">
-            <label for="nombre">Nombre de la Tienda</label>
-        </div>
-    </form>
-    <div class="formButton">
-        <button onclick="crearTienda()">crear tienda</button>
-        <button onclick="reset()">Limpiar</button>
-    </div>
-    <section>
-        <div class="boxTienda">      
-        
-        </div>
-        <button onclick="totalDinero()">Sumar cantidades</button>
-        <div class="boxResultado">
-            <h3 class="textResultado">Cantidad total de dinero recaudado: <span class="text1"></span></h3>
-            <h3 class="textMayoVenta">Tienda con mayor ventas: <span class="text2"></span></h3>
-            <h3 class="menoVenta">Tienda con menor venta: <span class="text3"></span></h3>
-        </div>
-    </section>
-   </main>
+        <section>
+            <div class="boxTienda">
+
+            </div>
+            <button class="btnTotal" onclick="totalDinero()">Sumar cantidades</button>
+            <div class="boxResultado">
+                <h3 class="textResultado">Cantidad total de dinero recaudado: <span class="text1"></span></h3>
+                <h3 class="textMayoVenta">Tienda con mayor ventas: <span class="text2"></span></h3>
+                <h3 class="menoVenta">Tienda con menor venta: <span class="text3"></span></h3>
+            </div>
+        </section>
+    </main>
 </body>
 <script src="index.js"></script>
+
 </html>
